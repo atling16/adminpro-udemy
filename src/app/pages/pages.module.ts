@@ -5,11 +5,21 @@ import { ProgressComponent } from './progress/progress.component';
 import { Graficas1Component } from './graficas1/graficas1.component';
 import { PagesComponent } from './pages.component';
 import { sharedStylesheetJitUrl } from '@angular/compiler';
+import {FormsModule} from '@angular/forms';
+
+// ng2-charts
+import { ChartsModule } from 'ng2-charts';
 
 
 // shared.modules
 import { SharedModules } from '../shared/shared.module';
 import { PAGES_ROUTES } from './pages.routes';
+// Temporal
+import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
+import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.component';
+
+
+
 
 
 
@@ -19,7 +29,9 @@ declarations: [
    DashboardComponent,
    ProgressComponent,
    PagesComponent,
-   Graficas1Component
+   Graficas1Component,
+   GraficoDonaComponent,
+   IncrementadorComponent
 
 ],
 exports: [
@@ -29,7 +41,10 @@ exports: [
 ],
  imports: [
     SharedModules,
-    PAGES_ROUTES
+    PAGES_ROUTES,
+   //  PagesModule,
+   FormsModule,
+   ChartsModule
  ]
 
 })
