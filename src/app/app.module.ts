@@ -14,6 +14,9 @@ import { APP_ROUTES } from './app.routes';
 import { PagesModule } from './pages/pages.module';
 
 import { FormsModule } from '@angular/forms';
+// Servicios
+import { SettingsService } from './Services/settings/settings.service';
+import { ServiceModule } from './Services/service.module';
 
 @NgModule({
   declarations: [
@@ -28,9 +31,10 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     APP_ROUTES,
     PagesModule,
+    ServiceModule,
     FormsModule
   ],
-  providers: [],
+  providers: [SettingsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

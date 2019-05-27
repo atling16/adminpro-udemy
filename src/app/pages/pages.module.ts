@@ -17,6 +17,7 @@ import { PAGES_ROUTES } from './pages.routes';
 // Temporal
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
 import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.component';
+import { AccoutSettingsComponent } from './accout-settings/accout-settings.component';
 
 
 
@@ -31,7 +32,8 @@ declarations: [
    PagesComponent,
    Graficas1Component,
    GraficoDonaComponent,
-   IncrementadorComponent
+   IncrementadorComponent,
+   AccoutSettingsComponent
 
 ],
 exports: [
