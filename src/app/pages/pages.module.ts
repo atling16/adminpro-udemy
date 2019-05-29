@@ -18,6 +18,8 @@ import { PAGES_ROUTES } from './pages.routes';
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
 import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.component';
 import { AccoutSettingsComponent } from './accout-settings/accout-settings.component';
+import { PromesasComponent } from './promesas/promesas.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 
 
@@ -33,7 +35,9 @@ declarations: [
    Graficas1Component,
    GraficoDonaComponent,
    IncrementadorComponent,
-   AccoutSettingsComponent
+   AccoutSettingsComponent,
+   PromesasComponent,
+   RxjsComponent
 
 ],
 exports: [
